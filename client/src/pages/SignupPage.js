@@ -61,7 +61,7 @@ const SignupPage = () => {
       }
 
       const res = await axios.post(
-        ${process.env.REACT_APP_API_URL}/api/auth/verify-otp`,
+        `${process.env.REACT_APP_API_URL}/api/auth/verify-otp`,
         { email, name, dateOfBirth }
       );
       localStorage.setItem("user", JSON.stringify(res.data.user));
