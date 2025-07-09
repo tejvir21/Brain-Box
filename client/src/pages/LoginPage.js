@@ -67,7 +67,7 @@ const LoginPage = () => {
       }
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/verify-otp",
+        `${process.env.REACT_APP_API_URL}/api/auth/verify-otp`,
         { email, name: "", dateOfBirth: "" },
         {
           withCredentials: true,
@@ -107,11 +107,11 @@ const LoginPage = () => {
               onChange={(e) => setOtp(e.target.value)}
               label="OTP"
             />
-            // <p>
-            //   <a href="" onClick={sendOtp}>
-            //     Resend OTP
-            //   </a>
-            // </p>
+             {/* <p>
+              <a href="" onClick={sendOtp}>
+              Resend OTP
+            </a>
+            </p> */}
             <Button variant="contained" onClick={verifyOtp}>
               Sign In
             </Button>
