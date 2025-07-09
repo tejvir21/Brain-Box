@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.navbar span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar a {
+    text-decoration: underline;
+    color: blue;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

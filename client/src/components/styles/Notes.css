@@ -1,0 +1,28 @@
+.notes {
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90dvw;
+}
+
+.add-note {
+    display: flex;
+}
+
+.note {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 4px 8px;
+    box-shadow: 7px 7px 7px #000;
+}
+
+.note span {
+    cursor: pointer;
+}
