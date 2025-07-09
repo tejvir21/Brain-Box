@@ -107,11 +107,11 @@ const LoginPage = () => {
               onChange={(e) => setOtp(e.target.value)}
               label="OTP"
             />
-            <p>
-              <a href="" onClick={sendOtp}>
-                Resend OTP
-              </a>
-            </p>
+            // <p>
+            //   <a href="" onClick={sendOtp}>
+            //     Resend OTP
+            //   </a>
+            // </p>
             <Button variant="contained" onClick={verifyOtp}>
               Sign In
             </Button>
